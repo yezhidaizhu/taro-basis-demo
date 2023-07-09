@@ -22,7 +22,16 @@ export default function Headers({
   useLoad(async () => {});
 
   const handleBack = useCallback(() => {
-    onBack ? onBack?.() : Taro.navigateBack();
+    if (onBack) {
+      onBack?.();
+    } else {
+      const pages = Taro.getCurrentPages();
+      if (pages.length > 1) {
+        Taro.navigateBack();
+      } else {
+        Taro.redirectTo({ url: "/pages/index/index" });
+      }
+    }
   }, [onBack]);
 
   return (
