@@ -79,9 +79,7 @@ const config = {
   },
   alias: {
     '@/components': path.resolve(__dirname, '..', 'src/components'),
-    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
-    '@/package': path.resolve(__dirname, '..', 'package.json'),
-    '@/project': path.resolve(__dirname, '..', 'project.config.json'),
+    '@/store': path.resolve(__dirname, '..', 'src/store'),
   }
 }
 
