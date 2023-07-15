@@ -1,0 +1,40 @@
+
+.my-custom-footer{
+  // background-color: red;
+  box-sizing: border-box;
+  border-top: 2px solid #F6F6F6;
+}
+
+.my-custom-footer-tab-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.my-custom-footer-tab{
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  overflow: hidden;
+  gap: 4px;
+}
+
+.my-custom-footer-tab-active{
+  color: #FF0000;
+}
+
+.my-custom-footer-tab-icon{
+  --size: 40px;
+  width: var(--size);;
+  height: var(--size);
+}

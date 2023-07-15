@@ -15,7 +15,7 @@ export default function Index() {
 
   return (
     <Container title="首页" hiddenBack>
-      <Text>test: {appState?.count}</Text>
+      <Text>count: {appState?.count}</Text>
 
       <Button
         type="primary"

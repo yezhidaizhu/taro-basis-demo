@@ -1,4 +1,5 @@
 import { View } from "@tarojs/components";
+import Footer from "../Footer";
 import Headers from "../Header";
 import "./container.scss";
 
@@ -32,6 +33,9 @@ export default function Container({
 
       {/* container */}
       <View className={["my-custom-container", className]}>{children}</View>
+
+      {/* footer */}
+      <Footer />
     </View>
   );
 }
